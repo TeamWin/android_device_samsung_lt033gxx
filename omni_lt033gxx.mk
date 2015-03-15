@@ -20,7 +20,7 @@
 #
 
 # Inherit from those products. Most specific first.
-#$(call inherit-product, device/samsung/lt03wifiue/device.mk)
+#$(call inherit-product, device/samsung/lt033gxx/device.mk)
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
@@ -28,8 +28,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 PRODUCT_COPY_FILES := $(LOCAL_PATH)/init.recovery.universal5420.rc:root/init.recovery.universal5420.rc
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := omni_lt03wifiue
-PRODUCT_DEVICE := lt03wifiue
+PRODUCT_NAME := omni_lt033gxx
+PRODUCT_DEVICE := lt033gxx
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := lt03wifiue
+PRODUCT_MODEL := lt033gxx
 
